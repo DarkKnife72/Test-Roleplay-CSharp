@@ -1,0 +1,5 @@
+﻿<meta>
+	<info name="Roleplay" description="DarkKnife Tarafından Yapılan Roleplay Sunucusunun Alt Yapısı" />
+
+	<script src="bin/Debug/net6.0/Roleplay.dll" />
+</meta>

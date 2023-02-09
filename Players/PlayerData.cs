@@ -36,22 +36,5 @@ namespace Roleplay.Players
                 player.SetData(DataIdentifier, new PlayerData());
             return player.GetData<PlayerData>(DataIdentifier);
         }
-
-        public void SetAdminLevel(int level)
-        {
-            this.AdminLevel = level;
-        }
-        public void SetHelperLevel(int level)
-        {
-            this.HelperLevel = level;
-        }
-        public void SetHealth(int health)
-        {
-            this.Health = health;
-        }
-        public void SetArmor(int armor)
-        {
-            this.Armor = armor;
-        }
     }
 }

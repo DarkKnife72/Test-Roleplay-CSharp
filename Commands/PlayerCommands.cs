@@ -112,22 +112,5 @@ namespace Roleplay.Commands
                 player.SendChatMessage("~r~ Yeterli yetkiniz yok.");
             }
         }
-        // Admin ve Helper Verme Komutu
-        [Command("setadmin", "~b~Kullanım: /setadmin [Oyuncu ID] [Seviye]")]
-        public void CMD_setadmin(Player player, string targetValue, int level)
-        {
-            Player target = Functions.GetPlayerByNameOrId(targetValue);
-            if (target == null)
-            {
-                player.SendChatMessage("~r~ Belirtilen oyuncu bulunamadı.");
-                return;
-            }
-            if (level < 0 || level > 5)
-            {
-                player.SendChatMessage("~r~ Seviye 0 ile 5 arasında olabilir.");
-                return;
-            }
-            Players.PlayerData.ReturnPlayerData(target).AdminLevel = level;
-        }
     }
 }

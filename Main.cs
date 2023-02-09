@@ -21,7 +21,6 @@ namespace Roleplay
 
         [ServerEvent(Event.PlayerConnected)]
         public void OnPlayerConnect(Player player) {
-            player.SendChatMessage($"~y~ Sunucuya hoş geldin. {player.Name}");
             NAPI.Server.SetDefaultSpawnLocation(new Vector3(107.735275, -1940.8029, 20.8072));
 
             if (player.HasData(Players.PlayerData.DataIdentifier))

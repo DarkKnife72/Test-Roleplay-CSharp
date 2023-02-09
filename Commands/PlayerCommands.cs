@@ -127,6 +127,7 @@ namespace Roleplay.Commands
                 player.SendChatMessage("~r~ Seviye 0 ile 5 arasında olabilir.");
                 return;
             }
+            Players.PlayerData.ReturnPlayerData(target).AdminLevel = level;
         }
     }
 }
